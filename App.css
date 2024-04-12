@@ -1,0 +1,109 @@
+/* App.css */
+.center-text {
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between; /* Adjusted to space between */
+  height: 60px;
+  position: fixed;
+  bottom: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top-section .rounded-box {
+  margin-right: 40px; /* Add white space between rounded boxes */
+}
+
+.rounded-box {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.rounded-box p {
+  margin: 0;
+}
+
+.top-section .rounded-box:nth-child(2) {
+  margin-top: 20px;
+}
+
+.top-section .rounded-box:nth-child(1) {
+  margin-top: 20px;
+}
+
+.bottom-dialog {
+  text-align: center;
+  position: fixed;
+  bottom: 20px; /* Adjusted top position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom-dialog textarea {
+  width: 15cm; /* Adjusted width */
+  height: 30px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Make the arrow button red */
+.bottom-dialog button {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: red; /* Set the color to red */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  top: -12px; /* Moved up by 12 pixels */
+}
+
+/* User input text styling */
+.user-input-container {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-height: calc(100vh - 300px);
+  overflow-y: scroll;
+}
+
+.user-input-box {
+  display: block;
+  background-color: #ccc;
+  color: #555;
+  border-radius: 10px; /* Rounded corners */
+  padding: 8px 12px;
+  font-size: 16px;
+  margin: 0 auto 5px;
+  width: auto; /* Adjust width automatically based on content */
+  max-width: 50%; /* Set a maximum width for the box */
+}
+
+.chatbot-box {
+  display: block;
+  background-color: #00008b;
+  color: #fff;
+  border-radius: 10px; /* Rounded corners */
+  padding: 8px 12px;
+  font-size: 16px;
+  margin: 0 auto 5px; /* Center align with auto margins and add bottom margin */
+  width: auto; /* Adjust width automatically based on content */
+  max-width: 50%; /* Set a maximum width for the box */
+}
+
+.logo {
+  position: absolute; /* Set position to absolute */
+  top: 25px; /* Adjust the distance from the top */
+  left: 25px; /* Adjust the distance from the left */
+}
